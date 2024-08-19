@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .weather-container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container weather-container">
+        <h1 class="text-center">Weather App</h1>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form id="weather-form" class="form-inline">
+                    <input type="text" id="city" class="form-control mr-2" placeholder="Enter city name" required>
+                    <button type="submit" class="btn btn-primary">Get Weather</button>
+                </form>
+                <div id="weather-result" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
